@@ -1,0 +1,26 @@
+//- index.jade
+- var title = "Project Boilerplate"
+- var page = "Homepage"
+include ./includes/variable.pug
+
+doctype html
+html(lang="en")
+
+    // html head
+    head
+        include ./includes/head.pug
+
+    // body
+    body
+
+        // page header
+        include ./includes/header.pug
+
+        // page main
+        main(role="main")
+    
+    // page footer
+        include ./includes/footer.pug
+
+    // page script
+    include ./includes/script.pug

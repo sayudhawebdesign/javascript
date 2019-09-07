@@ -1,0 +1,42 @@
+// ===== Responsive Styles ===========================================================================
+// Author: xxx (xxx@xtremax.com)
+// 2017
+// Info: Main styling for ProjectX (desktop-first approach)
+// ===================================================================================================
+
+// import bootstrap variables, grid and mixins
+// @import '~font-awesome/css/font-awesome.css';
+// @import '~bootstrap/scss/bootstrap';
+@import 'default/fonts';
+@import 'default/variable';
+@import 'mixin/mixin';
+// @import './component/temp-iframe';
+
+body {
+    // header section
+    header {
+        @import 'component/header';
+    }
+
+    // main section
+    main[ role='main' ] {
+        // anticipate page that has very few content ( short height )
+        // to avoid hanging footer
+        min-height: calc(100vh - 527px);
+
+        // each page style goes here
+        // example : @import "page/homepage"
+        @import 'page/index';
+    }
+
+    // footer section
+    footer {
+        @import 'component/footer';
+    }
+
+    // default style
+    @import 'default/default';
+
+    // responsive style
+    @import 'responsive/responsive';
+}

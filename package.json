@@ -1,0 +1,27 @@
+{
+  "name": "javascript-ebook",
+  "version": "1.0.0",
+  "description": "Free Version JavaScript Ebook by Sayudha Lukita Wibisana",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sayudhawebdesign/javascript.git"
+  },
+  "author": "Sayudha Lukita Wibisana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sayudhawebdesign/javascript/issues"
+  },
+  "homepage": "https://github.com/sayudhawebdesign/javascript#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "prettier": "1.18.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.3.0"
+  }
+}

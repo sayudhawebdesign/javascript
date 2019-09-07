@@ -1,0 +1,81 @@
+// reset
+* {
+  outline: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+// button style
+
+// typograph
+
+// for example using default-text mixin
+
+h1 {
+  @include default-text("h1");
+  color: $header-color;
+}
+
+h2 {
+  @include default-text("h2");
+  color: $header-color;
+}
+
+h3 {
+  @include default-text("h3");
+  color: $header-color;
+}
+
+h4 {
+  @include default-text("h4");
+  color: $header-color;
+}
+
+.body-text {
+  @include default-text("body-text");
+  color: $body-text-color;
+}
+
+.body-link {
+  color: $header-color;
+  text-decoration: underline;
+
+  &:hover {
+    color: #3e588c;
+    text-decoration: none;
+  }
+}
+
+// global link style
+// a {
+// }
+
+// img {
+// }
+
+// ul {
+
+//     li {
+//     }
+// }
+
+// ol {
+
+//     li {
+//     }
+// }
