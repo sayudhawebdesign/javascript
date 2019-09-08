@@ -23,7 +23,6 @@ a {
 // button style
 
 // typograph
-
 // for example using default-text mixin
 
 h1 {
@@ -46,7 +45,7 @@ h4 {
   color: $header-color;
 }
 
-.body-text {
+p {
   @include default-text("body-text");
   color: $body-text-color;
 }

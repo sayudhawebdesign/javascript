@@ -5,38 +5,42 @@
 // ===================================================================================================
 
 // import bootstrap variables, grid and mixins
-// @import '~font-awesome/css/font-awesome.css';
-// @import '~bootstrap/scss/bootstrap';
-@import 'default/fonts';
-@import 'default/variable';
-@import 'mixin/mixin';
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "default/fonts";
+@import "default/variable";
+@import "mixin/mixin";
 // @import './component/temp-iframe';
 
 body {
-    // header section
-    header {
-        @import 'component/header';
-    }
+  // header section
+  header {
+    @import "component/header";
+  }
 
-    // main section
-    main[ role='main' ] {
-        // anticipate page that has very few content ( short height )
-        // to avoid hanging footer
-        min-height: calc(100vh - 527px);
+  // main section
+  main[role="main"] {
+    // anticipate page that has very few content ( short height )
+    // to avoid hanging footer
+    min-height: calc(100vh - 527px);
 
-        // each page style goes here
-        // example : @import "page/homepage"
-        @import 'page/index';
-    }
+    // each page style goes here
+    // example : @import "page/homepage"
+    @import "page/index";
+    @import "page/styleguide";
+  }
 
-    // footer section
-    footer {
-        @import 'component/footer';
-    }
+  // footer section
+  footer {
+    @import "component/footer";
+  }
 
-    // default style
-    @import 'default/default';
+  // default style
+  @import "default/default";
 
-    // responsive style
-    @import 'responsive/responsive';
+  // responsive style
+  @import "responsive/responsive";
 }

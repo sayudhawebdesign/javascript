@@ -1,0 +1,16 @@
+section.paper {
+  .paper-text {
+    background-color: #fffbbd;
+    padding: 30px 30px;
+
+    .script-text {
+      padding: 30px;
+      background-color: #7fb069;
+      xmp {
+        font-style: "Space Mono";
+        color: $body-text-color;
+        white-space: pre-wrap;
+      }
+    }
+  }
+}
